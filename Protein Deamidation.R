@@ -6,7 +6,7 @@ library(janitor)
 #   - Here we load the data from PEAKS and perform some standardization steps as contents may differ slightly file-to-file.
 #   - This code is written to operate on the "protein-peptides.csv" file that is exported from PEAKS 10pro after a database search. 
 
-source_file <- read.csv("D:/JAS Paper Data/AFA_Protein_Peptides - Copy/TYB 142_protein-peptides.csv") %>% # update file path as needed
+source_file <- read.csv("Path to your file here") %>% # update file path as needed
   clean_names()
 
 #   - This line renames the "Area" column as the generalized "intensity" for simplification. 
